@@ -1,18 +1,18 @@
 
-# what it is
+# what is it?
 
- SSL 9.0.2 mentions a patch to fix out of order cert chains
- 
- in SSL 9.2 we have a root CA and an out of order cert chain
- for host hooks.glip.com.
+SSL 9.0.2 mentions a patch to fix out of order cert chains
 
- when we try to verify peer with the out of order cert chain
- we get Unknown CA.
+In SSL 9.2 we have a root CA and an out of order cert chain
+for host hooks.glip.com.
 
- Is this expected behaviour for Erlang SSL 9.2 with verify_peer ?
+When we try to verify peer with the out of order cert 
+chain we get 'Unknown CA'.
 
- If it is what is the ssl 9.0.2 refering to when it says it supports
- out of order cert chains
+Is this expected behaviour for Erlang SSL 9.2 with verify_peer ?
+
+The http://erlang.org/doc/apps/ssl/notes.html#ssl-9.0.2 notes
+mention that other care may need to be taken to ensure compatibility.
 
 
 
